@@ -1,0 +1,28 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2619
+
+*textobj-function* is a Vim plugin to provide universal text objects for
+various kinds of functions.  For example, you can select any function with
+|<Plug>(textobj-function-a)| / |<Plug>(textobj-function-i)| (default key
+bindings: af / if).
+
+The definition of a "function" is usually differed depending on what you are
+editing, so at first, you have to tell the definition of what kind of function
+you want to select to textobj-function.  By default, textobj-function knows
+about functions in the following languages:
+					    *textobj-function-known-languages*
+- C language		|textobj-function-c|
+- Vim script		|textobj-function-vim|
+
+If you want to tell about more functions in other languages, see
+|textobj-function-customizing| for how to tell and
+after/ftplugin/*/textobj-function.vim for the samples.
+
+Requirements:
+- Vim 7.2 or later
+- |textobj-user| 0.3.7 or later (vimscript#2100)
+
+Latest version:
+http://github.com/kana/vim-textobj-function
+
+Document in HTML format:
+http://kana.github.com/config/vim/textobj-function.html
